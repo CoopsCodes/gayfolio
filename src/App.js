@@ -13,6 +13,9 @@ function App() {
 			<div className="icon fl">
 				<div className="flag"></div>
 			</div>
+			<div className="icon ca">
+				<div className="cat"></div>
+			</div>
 			<header className="App-header">
 				<p>
 					<span role="img" aria-label="man shrugging">

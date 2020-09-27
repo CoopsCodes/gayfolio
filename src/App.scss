@@ -26,6 +26,12 @@ $size: 65px;
 	font-size: 50px;
 }
 
+.cat:after {
+	position: absolute;
+	content: "\1F63B";
+	font-size: 50px;
+}
+
 .rainbow:after {
 	position: absolute;
 	content: "\1F308";
@@ -43,18 +49,23 @@ $size: 65px;
 }
 
 .uni {
-	animation: x 6s linear 0s infinite alternate,
-		y 4s linear 0s infinite alternate;
+	animation: x 6.1s linear 0s infinite alternate,
+		y 5.7s linear 0s infinite alternate;
 }
 
 .rain {
-	animation: x 3s linear 0s infinite alternate,
-		y 4s linear 0s infinite alternate;
+	animation: x 3.3s linear 0s infinite alternate,
+		y 4.8s linear 0s infinite alternate;
 }
 
 .fl {
-	animation: x 4.4s linear 0s infinite alternate,
-		y 2s linear 0s infinite alternate;
+	animation: x 4.2s linear 0s infinite alternate,
+		y 3.7s linear 0s infinite alternate;
+}
+
+.ca {
+	animation: x 5.4s linear 0s infinite alternate,
+		y 7s linear 0s infinite alternate;
 }
 
 @keyframes x {
