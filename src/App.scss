@@ -1,0 +1,46 @@
+$size: 50px;
+
+.App {
+	text-align: center;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.App-header {
+	background-color: #ff85e5;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+.unicorn:after {
+	content: "\1F984";
+	font-size: $size;
+}
+.blob {
+	position: absolute;
+}
+.x {
+	animation: x 20s linear infinite alternate;
+}
+
+.y {
+	animation: y 13s linear infinite alternate;
+}
+
+@keyframes x {
+	100% {
+		transform: translateX(calc(100vw - #{$size}));
+	}
+}
+
+@keyframes y {
+	100% {
+		transform: translateY(calc(100vh - #{$size}));
+	}
+}
