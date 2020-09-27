@@ -1,4 +1,4 @@
-$size: 50px;
+$size: 65px;
 
 .App {
 	text-align: center;
@@ -17,30 +17,60 @@ $size: 50px;
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
 	color: white;
-}
-.unicorn:after {
-	content: "\1F984";
-	font-size: $size;
-}
-.blob {
-	position: absolute;
-}
-.x {
-	animation: x 20s linear infinite alternate;
+	overflow: hidden;
 }
 
-.y {
-	animation: y 13s linear infinite alternate;
+.unicorn:after {
+	position: absolute;
+	content: "\1F984";
+	font-size: 50px;
+}
+
+.rainbow:after {
+	position: absolute;
+	content: "\1F308";
+	font-size: 50px;
+}
+
+.flag:after {
+	position: absolute;
+	content: "\1F3F3"+ "\FE0F"+ "\200D"+ "\1F308";
+	font-size: 50px;
+}
+
+.icon {
+	position: absolute;
+}
+
+.uni {
+	animation: x 6s linear 0s infinite alternate,
+		y 4s linear 0s infinite alternate;
+}
+
+.rain {
+	animation: x 3s linear 0s infinite alternate,
+		y 4s linear 0s infinite alternate;
+}
+
+.fl {
+	animation: x 4.4s linear 0s infinite alternate,
+		y 2s linear 0s infinite alternate;
 }
 
 @keyframes x {
-	100% {
-		transform: translateX(calc(100vw - #{$size}));
+	from {
+		left: 0;
+	}
+	to {
+		left: calc(100vw - #{$size});
 	}
 }
 
 @keyframes y {
-	100% {
-		transform: translateY(calc(100vh - #{$size}));
+	from {
+		top: 0;
+	}
+	to {
+		top: calc(100vh - #{$size});
 	}
 }

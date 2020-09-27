@@ -4,10 +4,14 @@ import "./App.scss";
 function App() {
 	return (
 		<div className="App">
-			<div className="blob-wrap x">
-				<div className="blob y">
-					<div className="unicorn"></div>
-				</div>
+			<div className="icon rain">
+				<div className="rainbow"></div>
+			</div>
+			<div className="icon uni">
+				<div className="unicorn"></div>
+			</div>
+			<div className="icon fl">
+				<div className="flag"></div>
 			</div>
 			<header className="App-header">
 				<p>
